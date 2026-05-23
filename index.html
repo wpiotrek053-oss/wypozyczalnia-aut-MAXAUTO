@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+  </section>
+
+  <!-- PODSTRONA OFERTA -->
+  <section id="oferta">
+    <h2>Oferta i rezerwacja</h2>
+
+    <div class="formularz">
+      <p>
+        W naszej wypożyczalni dostępne są auta osobowe,
+        SUV-y oraz busy.
+      </p>
+
+      <p>
+        Możesz zarezerwować auto online wybierając datę
+        odbioru i zwrotu.
+      </p>
+    </div>
+  </section>
+
+  <!-- REZERWACJA -->
+  <section>
+    <h2>Rezerwacja auta</h2>
+
+    <div class="formularz">
+
+      <h3>Formularz rezerwacji</h3>
+
+      <label>Imię i nazwisko</label>
+      <input type="text" placeholder="Wpisz imię i nazwisko">
+
+      <label>Numer telefonu</label>
+      <input type="tel" placeholder="Wpisz numer telefonu">
+
+      <label>Data odbioru</label>
+      <input type="date" id="odbior">
+
+      <label>Data zwrotu</label>
+      <input type="date" id="zwrot">
+
+      <label>Kategoria auta</label>
+      <select id="auto">
+        <option value="150">Osobowe</option>
+        <option value="250">SUV</option>
+        <option value="350">Bus</option>
+      </select>
+
+      <button onclick="obliczKoszt()">
+        Oblicz koszt
+      </button>
+
+      <div class="wynik">
+        <p id="dni"></p>
+        <p id="koszt"></p>
+        <p id="rabat"></p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Połączenie z JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>
